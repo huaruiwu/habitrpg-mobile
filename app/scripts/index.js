@@ -5,5 +5,10 @@
  */
 
 document.addEventListener('backbutton', function(event) {
-	event.preventDefault()
-})
+	event.preventDefault();
+});
+
+$("input, textarea").on('click',function(evt){
+  evt.stopPropagation();
+  evt.preventDefault();
+});
