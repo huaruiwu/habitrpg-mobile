@@ -98,6 +98,9 @@
             </div>
         </div>
 
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="scripts/index.js"></script>
+
         <!-- FIXME This seems to need to be outside the build step for some reason, look into it -->
         <script src="bower_components/habitrpg-shared/browser/browser.debug.js"></script>
 
@@ -137,9 +140,12 @@
         <script src="scripts/services/notificationServices.js"></script>
         <script src="scripts/controllers/notificationCtrl.js"></script>
         <script src="scripts/controllers/userAvatarCtrl.js"></script>
-
-        <script src="scripts/index.js"></script>
         <!-- endbuild -->
+
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+
 
     </body>
 </html>

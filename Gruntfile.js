@@ -258,7 +258,8 @@ module.exports = function (grunt) {
             'res/screen/ios/**/*',
             //'res/**/*',
             'shared/**/*',
-            'fonts/**/*'
+            'fonts/**/,*',
+            'scripts/index.js'
           ]
         }, {
           expand: true,
